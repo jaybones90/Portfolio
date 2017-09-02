@@ -1,18 +1,53 @@
-/* Demo Styles */
+
 body {
-  padding: 2em 2em;
+  padding: 2em 0 0 0;
+}
+
+.nav-links {
+  text-align: center;
+}
+.nav-links li {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3em;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .headline {
   text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 15em;
+  left: 0;
 }
 
-.project-orbit {
-  margin: 5em 10em 0 10em;
+.headline h1 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-size: 5em;
 }
+
+.headline p {
+ font-family: 'Yanone Kaffeesatz', sans-serif;
+ font-size: 4em;
+ color: grey;
+ text-shadow: 2px 2px 2px white;
+}
+
+
+
+
+
+
+
+
 
 
 /*orbit for projects*/
+.project-orbit {
+  margin: 5em 10em 0 10em;
+}
 .docs-example-orbit-slide {
   padding: 2rem 4rem;
   color: #fefefe;
