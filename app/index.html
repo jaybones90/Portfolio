@@ -6,28 +6,33 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Catamaran:700|Josefin+Sans|Open+Sans+Condensed:300|Playfair+Display:900|Raleway:800|Slabo+27px|Work+Sans:100|Yanone+Kaffeesatz:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Amatic+SC:700|Bubbler+One|Handlee|Indie+Flower|Metal+Mania|Oswald|Rancho|Six+Caps" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
 <!-- nav bar -->
-    <nav class="navbar nav-links">
-      <ul class="nav">
-        <li class="navbar-brand">
-          <img src="img/jclogo3.png" width="100" height="100" alt="jc-logo">
-        </li>
-        <li>
-          <a href="/Users/jbones/desktop/jc-portfolio/app/about.html">About</a>
-        </li>
-        <li>
-          <a href="/Users/jbones/desktop/jc-portfolio/app/projects.html">Projects</a>
-        </li>
-        <li>
-          <a href="/contact.html">Contact</a>
-        </li>
-      </ul>
-    </nav>
+<nav class="navbar navbar-toggleable-md">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Jason Cruze Ainsworth</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <!-- intro section -->
     <div class="beach-section">
       <div class="beach-img"></div>
@@ -40,12 +45,27 @@
     <div class="container">
       <div class="row about-section">
         <div class="col-md-6">
-          <h3>About me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3>Hi, I'm Jason and I'm a developer</h3>
+          <p>I've always been fascinated by computers and how software can create a 'magical' experience for users when a program is well-designed. I became really excited about programming after spending time interacting with the software engineers while working for a start-up in the Bay Area. This motivated me to take the leap and enroll at Epicodus code school. It radically changed my life and now I can actually say I'm one of those people who's truely excited to wake up everyday and do the thing they love!</p>
         </div>
-        <div class="col-md-6">
-          <h3>Passions</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="col-md-6 hobby-section">
+          <h3>Things I Love</h3>
+          <ul>
+            <li>Bear, My Amazing Australian Shepherd</li>
+            <li>Skateboarding</li>
+            <li>Skydiving</li>
+            <li>Surfing</li>
+            <li>Snowboarding</li>
+            <li>Beach</li>
+            <li>Mountains</li>
+            <li>Desert</li>
+            <li>Camping</li>
+            <li>Off-roading</li>
+            <li>Motorcycles</li>
+            <li>Frisbee</li>
+            <li>Cooking</li>
+          </ul>
+          <!-- <p>I'd like to think I'm a pretty adventureous person and spend much of my time outside skateboarding, skydiving, hiking with my Australian Shepherd, Bear, or hanging out in the mountains camping and off-roading. </p> -->
         </div>
       </div>
     </div>
@@ -236,36 +256,69 @@
           <div id="the-shelf" class="modal">
             <div class="details">
               <h1>The Shelf</h1>
+              <h5>E-Commerce Site</h5>
               <hr>
               <ul>
-                <li>Ruby</li>
-                <li>Sinatra</li>
+                <li>Ruby on Rails</li>
+                <li>Bootstrap</li>
                 <li>ActiveRecord</li>
                 <li>PostgreSQL</li>
-                <li>API to seed local database</li>
+                <li>Stripe API</li>
               </ul>
-              <a class="btn btn-outline-primary" href="https://six-degrees-of-nic-cage.herokuapp.com/">View Site</a>
-              <a class="btn btn-outline-primary" href="https://github.com/jaybones90/six-degrees">View Repo</a>
+              <a class="btn btn-outline-primary" href="https://the-shelf-ecommerce.herokuapp.com/">View Site</a>
+              <a class="btn btn-outline-primary" href="https://github.com/jaybones90/the-shelf-RAILS">View Repo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project" value="bike-index">
+          <img class="gif" src="http://g.recordit.co/dt7EKzL6Kf.gif">
+          <div id="bike-index" class="modal">
+            <div class="details">
+              <h1>Bike Index</h1>
+              <hr>
+              <ul>
+                <li>JavaScript</li>
+                <li>NPM</li>
+                <li>Bower</li>
+                <li>Gulp</li>
+                <li>Firebase</li>
+                <li>Google Maps API</li>
+                <li>Bike Index API</li>
+              </ul>
+              <a class="btn btn-outline-primary" href="http://g.recordit.co/xRWv8rJWWm.gif">View Full Screen Demo</a>
+              <a class="btn btn-outline-primary" href="https://github.com/jaybones90/bike-index">View Repo</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-
-
-<!-- project details -->
-
-
-
-
-
-
+    <div class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h3>jasoncruze@gmail.com</h3>
+          </div>
+          <div class="col-sm-6">
+            <div class="icons">
+              <a href="#" target="_blank">
+                <img src="img/linkedin-logo.png" alt="">
+              </a>
+              <a href="#" target="_blank">
+                <img src="img/github-sign.png" alt="">
+              </a>
+              <a href="#" target="_blank" class="icon-border">
+                <img src="img/resume-logo.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
-
-
   <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="bootstrap/bootstrap.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </html>
