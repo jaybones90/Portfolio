@@ -121,7 +121,7 @@
 
 .card {
   text-align: center;
-font-family: 'Bubbler One', sans-serif;
+  font-family: 'Bubbler One', sans-serif;
   color: white;
   border: none;
   background-color: rgba(0, 0, 0, 0);
@@ -129,8 +129,9 @@ font-family: 'Bubbler One', sans-serif;
 
 .icon {
   margin: 2em auto;
-  max-width: 50%;
+  width: 40%;
 }
+
 
 
 
