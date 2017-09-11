@@ -69,6 +69,9 @@
    background-color: #F0F1F2;
    padding: 5em 0;
  }
+ .about-block .col-md-6 {
+   padding-top: 1em;
+ }
 .about-section {
   font-family: 'Bubbler One', sans-serif;
   font-size: 1.5em;
@@ -79,7 +82,7 @@
 }
 .about-section h3 {
   text-align: center;
-  margin: 0 0 1em 0;
+  margin: 0 0 .5em 0;
   font-family: 'Amatic SC', cursive;
   font-size: 1.8em;
 }
@@ -225,13 +228,14 @@
   background-color: rgba(40, 194, 255, 1);
   padding: 3em;
 }
+.contact-section .row {
+  text-align: center;
+}
 .contact-section h3 {
   font-family: 'Bubbler One', sans-serif;
   color: white;
 }
-.icons {
-text-align: right;
-}
+
 .icons img {
   max-width: 100%;
 }
