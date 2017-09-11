@@ -45,7 +45,6 @@
 }
 
 .beach-section {
-  background-image: url(img/);
   width: 100%;
   height: 700px;
   position: relative;
@@ -53,7 +52,7 @@
 }
 
 .beach-img {
-  background-image: url("../img/index-bg.jpg");
+  background-image: url("../img/index-bg.png");
   display: inline-block;
   background-size: cover;
   background-position: bottom;
