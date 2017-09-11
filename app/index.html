@@ -13,11 +13,11 @@
   </head>
   <body>
 <!-- nav bar -->
-<nav class="navbar navbar-toggleable-md">
+<nav class="navbar navbar-toggleable-md fixed-top">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand" href="#">Jason Cruze Ainsworth</a>
+  <a class="navbar-brand" href="#home">Jason Cruze Ainsworth</a>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
@@ -34,7 +34,7 @@
 </nav>
 
 <!-- intro section -->
-    <div class="beach-section">
+    <div class="beach-section" id="home">
       <div class="beach-img"></div>
       <div class="headline">
         <h3>Jason Cruze Ainsworth</h3>
@@ -42,33 +42,42 @@
       </div>
     </div>
 <!-- about me section -->
+  <div class="about-block">
     <div class="container">
       <div class="row about-section" id="about">
         <div class="col-md-6">
           <h3>Hi, I'm Jason and I'm a developer</h3>
-          <p>I've always been fascinated by computers and how software can create a 'magical' experience for users when a program is well-designed. I became really excited about programming after spending time interacting with the software engineers while working for a start-up in the Bay Area. This motivated me to take the leap and enroll at Epicodus code school. It radically changed my life and now I can actually say I'm one of those people who's truely excited to wake up everyday and do the thing they love!</p>
+          <p>I became really excited about programming after spending time interacting with the software engineers while working for a start-up in the Bay Area. This motivated me to take the leap and enroll at Epicodus code school. It radically changed my life and now I can actually say I'm one of those people who's truely excited to wake up everyday and do the thing they love!</p>
         </div>
         <div class="col-md-6 hobby-section">
           <h3>Things I Love</h3>
           <ul>
-            <li>Bear, My Amazing Australian Shepherd</li>
-            <li>Skateboarding</li>
-            <li>Skydiving</li>
-            <li>Surfing</li>
-            <li>Snowboarding</li>
-            <li>Beach</li>
-            <li>Mountains</li>
-            <li>Desert</li>
-            <li>Camping</li>
-            <li>Off-roading</li>
-            <li>Motorcycles</li>
-            <li>Frisbee</li>
-            <li>Cooking</li>
+            <div class="row">
+              <div class="col-sm-7">
+                <li>My Australian Shepherd</li>
+                <li>Skateboarding</li>
+                <li>Skydiving</li>
+                <li>Surfing</li>
+                <li>Snowboarding</li>
+                <li>Beach</li>
+                <li>Mountains</li>
+              </div>
+              <div class="col-sm-5">
+                <li>Desert</li>
+                <li>Camping</li>
+                <li>Off-roading</li>
+                <li>Motorcycles</li>
+                <li>Frisbee</li>
+                <li>Cooking</li>
+                <li>Traveling</li>
+              </div>
+            </div>
           </ul>
-          <!-- <p>I'd like to think I'm a pretty adventureous person and spend much of my time outside skateboarding, skydiving, hiking with my Australian Shepherd, Bear, or hanging out in the mountains camping and off-roading. </p> -->
         </div>
       </div>
     </div>
+  </div>
+
 <!-- experience section-->
     <div class="experience-section">
       <div class="container">
@@ -215,6 +224,25 @@
     <div class="project-section" id="projects">
       <h1>Projects</h1>
       <div class="container project-container">
+        <div class="project" value="the-shelf">
+          <img class="gif" src="http://g.recordit.co/PYqgsto6ct.gif">
+          <div id="the-shelf" class="modal">
+            <div class="details">
+              <h1>The Shelf</h1>
+              <h5>E-Commerce Site</h5>
+              <hr>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>Bootstrap</li>
+                <li>ActiveRecord</li>
+                <li>PostgreSQL</li>
+                <li>Stripe API</li>
+              </ul>
+              <a class="btn btn-outline-primary" href="https://the-shelf-ecommerce.herokuapp.com/">View Site</a>
+              <a class="btn btn-outline-primary" href="https://github.com/jaybones90/the-shelf-RAILS">View Repo</a>
+            </div>
+          </div>
+        </div>
         <div class="project" value="type-test">
           <img class="gif" src="http://g.recordit.co/nwp2dwiuRF.gif">
           <div id="type-test" class="modal">
@@ -251,25 +279,6 @@
             </div>
           </div>
         </div>
-        <div class="project" value="the-shelf">
-          <img class="gif" src="http://g.recordit.co/PYqgsto6ct.gif">
-          <div id="the-shelf" class="modal">
-            <div class="details">
-              <h1>The Shelf</h1>
-              <h5>E-Commerce Site</h5>
-              <hr>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>Bootstrap</li>
-                <li>ActiveRecord</li>
-                <li>PostgreSQL</li>
-                <li>Stripe API</li>
-              </ul>
-              <a class="btn btn-outline-primary" href="https://the-shelf-ecommerce.herokuapp.com/">View Site</a>
-              <a class="btn btn-outline-primary" href="https://github.com/jaybones90/the-shelf-RAILS">View Repo</a>
-            </div>
-          </div>
-        </div>
         <div class="project" value="bike-index">
           <img class="gif" src="http://g.recordit.co/dt7EKzL6Kf.gif">
           <div id="bike-index" class="modal">
@@ -301,13 +310,13 @@
           </div>
           <div class="col-sm-6">
             <div class="icons">
-              <a href="#" target="_blank">
+              <a href="https://www.linkedin.com/in/jason-ainsworth" target="_blank">
                 <img src="img/linkedin-logo.png" alt="">
               </a>
-              <a href="#" target="_blank">
+              <a href="https://github.com/jaybones90" target="_blank">
                 <img src="img/github-sign.png" alt="">
               </a>
-              <a href="#" target="_blank" class="icon-border">
+              <a href="https://docs.google.com/document/d/1y53BpuWXmRKI_1288MH5RE6BHZv94JpEGQJ8MQM-znw/edit?usp=sharing" target="_blank" class="icon-border">
                 <img src="img/resume-logo.png" alt="">
               </a>
             </div>

@@ -1,14 +1,25 @@
 /*navbar*/
+.navbar {
+  background-color: white;
+}
 .navbar-brand {
   font-family: 'Metal Mania', cursive;
   color: #0275d8;
   font-size: 1.5rem;
 }
 .navbar-nav li {
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Bubbler One', sans-serif;
   font-size: 1.5rem;
   padding-left: 1em;
 }
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2, 117, 216, .7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+  border-color: #0275d8;
+}
+
+/*beach section */
 .headline {
   text-align: center;
   position: absolute;
@@ -16,8 +27,6 @@
   top: 6em;
   left: 0;
 }
-
-/*beach section */
 .headline h3 {
   font-family: 'Metal Mania', cursive;
   color: #28C2FF;
@@ -26,7 +35,7 @@
 }
 
 .headline p {
- font-family: 'Amatic SC', cursive;
+ font-family: 'Bubbler One', sans-serif;
  font-size: 4em;
  color: #28C2FF;
  text-shadow: 1px 1px 3px black;
@@ -36,6 +45,7 @@
   width: 100%;
   height: 700px;
   position: relative;
+  margin-top: 4%;
 }
 
 .beach-img {
@@ -49,8 +59,13 @@
 }
 
  /*about section*/
+ .about-block {
+   display: block;
+   width: 100%;
+   background-color: #F0F1F2;
+   padding: 5em 0;
+ }
 .about-section {
-  margin: 5em 0;
   font-family: 'Bubbler One', sans-serif;
   font-size: 1.5em;
   padding: 1em;
@@ -58,13 +73,11 @@
   text-align: center;
   font-weight: 400;
 }
-
 .about-section h3 {
   text-align: center;
   margin: 0 0 1em 0;
   font-family: 'Amatic SC', cursive;
   font-size: 1.8em;
-  font-weight: 600;
 }
 .hobby-section {
   text-align: center;
@@ -78,6 +91,7 @@
 .jason-background {
   fon
 }
+
 
 /*experience section */
 .experience-section {
@@ -135,6 +149,7 @@ font-family: 'Bubbler One', sans-serif;
   position: relative;
 }
 
+
 .gif {
   border-radius: 20px;
   max-width: 100%;
@@ -160,6 +175,7 @@ font-family: 'Bubbler One', sans-serif;
   height: 100%;
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   border-radius: 20px;
+  font-size: 2vw;
 }
 .slick-prev:before, .slick-next:before {
   color: black;
@@ -168,8 +184,8 @@ font-family: 'Bubbler One', sans-serif;
 .details {
   color: #0275d8;
   font-family: 'Bubbler One', sans-serif;
-  font-size: 2rem;
   text-align: center;
+  padding: 1em 0;
 }
 .details ul {
   list-style: none;
@@ -177,16 +193,18 @@ font-family: 'Bubbler One', sans-serif;
 }
 .details h1 {
   color: #0275d8;
-  padding: 2em 0 0 0;
+  padding: 3% 0 0 0;
+  font-size: 4vw;
 }
+.details a {
+  font-size: 2vw;
+}
+
 .details hr {
   width: 40%;
   background: white;
 }
-.details a {
-  width: 15%;
-  margin: 1em;
-}
+
 .details a:hover {
   border: 1px solid white;
   background: transparent;
