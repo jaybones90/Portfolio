@@ -2,51 +2,37 @@
 .navbar {
   background-color: white;
 }
-.navbar-brand {
-  font-family: 'Metal Mania', cursive;
-  color: #00A8E8;
-  font-size: 1.5rem;
-}
+
 .navbar-nav li {
-  font-family: 'Metal Mania', cursive;
+  font-family: 'Assistant';
   font-size: 1.5rem;
   padding-left: 1em;
-  color: #00A8E8;
+  font-weight: 200;
 }
 .navbar-nav a {
-  color: #00A8E8;
+  color: black;
 }
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(2, 117, 216, .7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-toggler {
-  border-color: #0275d8;
+  border-color: black;
 }
 
 /*beach section */
 .headline {
-  text-align: center;
+  font-family: 'Corben';
   position: relative;
   width: 100%;
-  top: 6em;
+  top: 8em;
 }
 .headline h3 {
-  font-family: 'Metal Mania', cursive;
   color: white;
   text-shadow: 2px 2px 8px black;
-  font-size: 6em;
-}
-/*.headline h3 span {
-  color: rgb(78,76,78);
-  text-shadow: 1px 1px 1px white;
-}*/
-.headline p span {
-  color: rgb(78,76,78);
-  text-shadow: 1px 1px 1px white;
+  font-size: 3em;
 }
 
 .headline p {
- font-family: 'Metal Mania', cursive;
  font-size: 3em;
  color: white;
  text-shadow: 2px 2px 8px black;
@@ -54,20 +40,12 @@
 
 .beach-section {
   width: 100%;
-  height: 700px;
+  height: 500px;
   position: relative;
   margin-top: 4%;
 }
 
-.beach-img {
-  background-image: url("../img/index-bg.png");
-  display: inline-block;
-  background-size: cover;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-}
+
 
  /*about section*/
  .about-block {
@@ -80,18 +58,19 @@
    padding-top: 1em;
  }
 .about-section {
-  font-family: 'Bubbler One', sans-serif;
+  font-family: 'Assistant', sans-serif;
   font-size: 1.5em;
   padding: 1em;
   color: #4E4C4E;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
 }
 .about-section h3 {
   text-align: center;
   margin: 0 0 .5em 0;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Assistant';
   font-size: 1.8em;
+  font-weight: 700;
 }
 .hobby-section {
   text-align: center;
@@ -110,17 +89,17 @@
   width: 100%;
   height: auto;
   display: block;
-  background-color: #00A8E8;
 }
 
 .experience-section h2 {
   margin-bottom: 1em;
 }
 .experience-section h1 {
-  font-size: 4em;
-  color: white;
+  font-size: 2.8em;
+  color: black;
   text-align: center;
-  font-family: 'Amatic SC', cursive;
+  font-family: 'Assistant';
+  font-weight: 700;
 }
 
 .experience-section .container {
@@ -129,19 +108,21 @@
 
 .card {
   text-align: center;
-  font-family: 'Bubbler One', sans-serif;
   color: white;
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+.card-block h2 {
+  font-family: 'Assistant';
+  color: black;
+  font-weight: 200;
+  /*text-shadow: 2px 2px 14px black;*/
 }
 
 .icon {
   margin: 2em auto;
   width: 40%;
 }
-
-
-
 
 /*orbit for projects*/
 .project-section{
@@ -156,8 +137,9 @@
   color: #4E4C4E;
   padding: 1em 0 1em 0;
   text-align: center;
-  font-family: 'Amatic SC', cursive;
-  font-size: 4em;
+  font-family: 'Assistant', cursive;
+  font-weight: 700;
+  font-size: 2.8em;
 }
 .project{
   position: relative;
@@ -187,29 +169,35 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  font-size: 2vw;
+  overflow: scroll;
 }
 .slick-prev:before, .slick-next:before {
   color: black;
 }
 
 .details {
-  color: #0275d8;
-  font-family: 'Bubbler One', sans-serif;
+  color: white;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 200;
   text-align: center;
   padding: 1em 0;
+  font-size: 1.5em;
 }
+
 .details ul {
   list-style: none;
   padding: 0;
 }
 .details h1 {
-  color: #0275d8;
+  color: white;
   padding: 3% 0 0 0;
-  font-size: 4vw;
+  font-size: 1.5em;
+}
+.details h5 {
+  font-size: .6em;
 }
 .details a {
-  font-size: 2vw;
+  /*font-size: 1em;*/
 }
 
 .details hr {
@@ -228,17 +216,16 @@
   width: 100%;
   height: auto;
   display: block;
-  background-color: #00A8E8;
   padding: 3em;
 }
-.contact-section .row {
-  text-align: center;
-}
-.contact-section h3 {
-  font-family: 'Bubbler One', sans-serif;
-  color: white;
-}
 
+.contact-section h3 {
+  font-family: 'Assistant', sans-serif;
+  color: black;
+}
+.icons {
+  text-align: right;
+}
 .icons img {
   max-width: 100%;
 }
@@ -256,4 +243,18 @@
   .headline p {
     font-size: 1.6em;
   }
+}
+@media(max-width:575px) {
+  .icons { text-align: center;}
+  .contact-section .row {
+    text-align: center;
+  }
+}
+@media(min-width:1440px) {
+  /*.details h1 {
+    font-size: 60px;
+  }
+  .details {
+    font-size: 40px;
+  }*/
 }
