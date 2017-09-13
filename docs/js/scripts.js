@@ -6,6 +6,10 @@ $('.project-container').slick({
   dots: true
 });
 
+$('.project-screenshots').slick({
+  // arrows: false
+});
+// hover for project orbit
 $('.project').hover(
   function jerry()  {
     var $selected = $("#" + $(this).attr('value'));
@@ -15,7 +19,7 @@ $('.project').hover(
     $selected.fadeOut(600);
   }
 );
-
+// smooth scroll function
 $('a[href*="#"]').click(function(){
   let hash = this.hash;
   $('html, body').animate({
@@ -24,3 +28,14 @@ $('a[href*="#"]').click(function(){
     window.location.hash = hash;
   });
 });
+// fade in headline
+$('.headline').fadeIn(2000);
+
+$('.project-screenshots').hover(
+  function(){
+    var $selected = $(this).attr(value);
+    console.log($selected)
+  }, function() {
+
+  }
+)

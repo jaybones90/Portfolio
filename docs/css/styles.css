@@ -25,6 +25,7 @@
   position: relative;
   width: 100%;
   top: 8em;
+  display: none;
 }
 .headline h3 {
   color: white;
@@ -106,7 +107,7 @@
   padding-top: 4em;
 }
 
-.card {
+/*.card {
   text-align: center;
   color: white;
   border: none;
@@ -116,17 +117,31 @@
   font-family: 'Assistant';
   color: black;
   font-weight: 200;
-  /*text-shadow: 2px 2px 14px black;*/
-}
+  /*text-shadow: 2px 2px 14px black;
+}*/
 
 .icon {
   margin: 2em auto;
   width: 40%;
 }
+/*----------------*/
+.project-grid {
+  width: 100%;
+}
+.project-description {
+  display: none;
+}
+.project-tile {
+  border: 1px solid black;
+  padding: 1em;
+}
+.screenshot {
+  width: 10%;
+}
+
 
 /*orbit for projects*/
 .project-section{
-  background-color: #F0F1F2;
   padding-bottom: 5%;
   overflow: hidden;
 }
