@@ -8,8 +8,6 @@ $('.project-container').slick({
 
 
 
-
-
 // hover for project orbit
 $('.project').hover(
   function jerry()  {
@@ -32,12 +30,17 @@ $('a[href*="#"]').click(function(){
 // fade in headline
 $('.headline').fadeIn(2000);
 
+
+// click function for project grid to display preview and start slick
 $('.project-tile').click(function(e){
-  let $slickId = $(this).attr('id');
+  $('.project-tile').removeClass('selectedItem')
+  // $selectedItem.removeClass('.selectedItem');
   let $target = $(e.currentTarget);
-  console.log($slickId)
+  $target.addClass('selectedItem');
   $('.project-description').hide();
   let $targetId = $target.attr('data-target');
-  $(`#${$targetId}-description`).removeClass('hidden').slideDown(1000);
-  $('.screenshot-orbit').slick();
+  $(`#${$targetId}-description`).removeClass('hidden').hide().fadeIn(700);
+  $('.project-row2').css('margin-top', '-4em')
+  let $slick = $(`#${$targetId}-slick`);
+  $slick.slick()
 })
