@@ -40,7 +40,7 @@ $('.project-tile').click(function(e){
   $('.project-description').hide();
   let $targetId = $target.attr('data-target');
   $(`#${$targetId}-description`).removeClass('hidden').hide().fadeIn(700);
-  $('.project-row2').css('margin-top', '-4em')
+  // $('.project-row2').css('margin-top', '-4em');
   let $slick = $(`#${$targetId}-slick`);
   $slick.slick()
 })

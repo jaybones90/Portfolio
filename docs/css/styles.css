@@ -129,8 +129,8 @@
   transform: scale(1.1);
   transition: .5s;
 }
-.project-row {
-  margin-top: 2em;
+.project-row1 {
+  margin-bottom: 2em;
 }
 .project-description-section {
   background-color: aliceblue;
@@ -188,10 +188,10 @@ min-width: 0;
 
 
 
-/*orbit for projects*/
+
+
 .project-section{
   padding-bottom: 5%;
-  overflow: hidden;
 }
 .project-container {
   padding-bottom: 1em;
@@ -207,15 +207,11 @@ min-width: 0;
 .project{
   position: relative;
 }
-
-
 .gif {
   max-width: 100%;
   max-height: 100%;
   display: inline-block;
 }
-
-
 .slick-prev:before, .slick-next:before {
   color: black;
 }
