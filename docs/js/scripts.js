@@ -7,6 +7,9 @@ $('.project-container').slick({
 });
 
 
+
+
+
 // hover for project orbit
 $('.project').hover(
   function jerry()  {
@@ -28,3 +31,13 @@ $('a[href*="#"]').click(function(){
 });
 // fade in headline
 $('.headline').fadeIn(2000);
+
+$('.project-tile').click(function(e){
+  let $slickId = $(this).attr('id');
+  let $target = $(e.currentTarget);
+  console.log($slickId)
+  $('.project-description').hide();
+  let $targetId = $target.attr('data-target');
+  $(`#${$targetId}-description`).removeClass('hidden').slideDown(1000);
+  $('.screenshot-orbit').slick();
+})
