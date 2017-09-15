@@ -78,6 +78,12 @@
   font-size: 1.8em;
   font-weight: 700;
 }
+.about-section hr {
+  width: 40%;
+}
+#hobby-section-hr {
+  width: 100%;
+}
 .hobby-section {
   text-align: center;
 }
