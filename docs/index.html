@@ -38,17 +38,44 @@
 
 <!-- intro section -->
     <div class="beach-section" id="home">
-      <div class="container">
-        <div class="headline">
-          <div class="row">
-            <div class="col-sm-12">
-              <h3><span>Hi, I'm</span> Jason</h3>
-              <p><span>I'm just another guy who loves to</span> &#10094;code&#10095;</p>
+      <div class="aff-image">
+        <div class="overlay">
+          <div class="container">
+            <div class="headline">
+              <div class="row">
+                <div class="col-sm-12">
+                  <h3><span>Hi, I'm</span> Jason</h3>
+                  <p><span>I'm just another guy who loves to</span> &#10094;code&#10095;</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- dev icon section -->
+        <div class="dev-icons">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <i class="devicon-ruby-plain"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-rails-plain-wordmark"></i>
+                <i class="devicon-angularjs-plain"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-sass-original"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon-bootstrap-plain-wordmark"></i>
+                <i class="devicon-postgresql-plain-wordmark"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
 <!-- about me section -->
   <div class="about-block" id="about">
     <div class="container">
@@ -61,13 +88,14 @@
           <p>Being a full stack developer, I genuinely love both front and back end programming and strive to consistantly write clean, elegant, and maintainable code. Some of the things I've been enjoying reserching in my free time are blockchain tech, new ES2017 features, and machine learning with tensor flow.</p>
         </div>
         <div class="col-md-4 hobby-section">
-          <h3>THINGS I LIKE</h3>
+          <h3>ENJOYMENTS</h3>
           <hr id="hobby-section-hr">
           <ul>
             <li>Playing with my Aussie Shepherd</li>
+            <li>Coding</li>
+            <li>Skydiving</li>
             <li>Skateboarding</li>
             <li>Snowboarding</li>
-            <li>Skydiving</li>
             <li>Surfing</li>
             <li>Beach</li>
             <li>Mountains</li>
@@ -84,27 +112,7 @@
     </div>
   </div>
 
-<!-- dev icon section -->
-    <div class="dev-icons">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col">
-            <i class="devicon-ruby-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-            <i class="devicon-rails-plain-wordmark"></i>
-            <i class="devicon-angularjs-plain"></i>
-            <i class="devicon-css3-plain-wordmark"></i>
-            <i class="devicon-sass-original"></i>
-            <i class="devicon-html5-plain-wordmark"></i>
-            <i class="devicon-jquery-plain-wordmark"></i>
-            <i class="devicon-nodejs-plain-wordmark"></i>
-            <i class="devicon-amazonwebservices-plain-wordmark"></i>
-            <i class="devicon-bootstrap-plain-wordmark"></i>
-            <i class="devicon-postgresql-plain-wordmark"></i>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
 
 <!-- project section -->
@@ -112,129 +120,25 @@
       <h1>PROJECTS</h1>
       <!-- first row -->
       <div class="container">
-        <div class="row project-row1">
+        <div class="row project-row2">
           <div class="col-sm-4">
-            <div class="project-tile" data-target="six-degrees">
-              <img class="screenshot" src="img/six-degrees-screenshot.png" alt="Card image cap">
+            <div class="project-tile" data-target="stinky-box" data-value="0">
+              <img class="screenshot" src="img/stinky-box-screenshot.png" alt="stinky-box-screenshot">
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="project-tile" data-target="the-shelf">
-              <img class="screenshot" src="img/the-shelf-screenshot.png" alt="Card image cap">
+            <div class="project-tile" data-target="catspot" data-value="1">
+              <img class="screenshot" src="img/catspot-screenshot.png" alt="catspot-screenshot">
             </div>
           </div>
           <div class="col-sm-4">
-            <div class="project-tile" data-target="type-test">
-              <img class="screenshot" src="img/type-test-screenshot1.png" alt="type-test-screenshot">
+            <div class="project-tile" data-target="bike-index" data-value="5" >
+              <img class="screenshot" src="img/bike-index-screenshot.png" alt="bike-index-screenshot">
             </div>
           </div>
         </div>
       </div>
         <!-- first row project descriptions  -->
-      <div class="project-description-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 project-description hidden" id="six-degrees-description">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div id="six-degrees-slick">
-                    <img class="screenshot" src="img/six-degrees-screenshot.png">
-                    <img class="screenshot" src="img/six-degrees-screenshot2.png">
-                    <img class="screenshot" src="img/six-degrees-screenshot3.png">
-                    <img class="screenshot" src="img/six-degrees-screenshot4.png">
-                  </div>
-                </div>
-                <div class="col-lg-6 details">
-                  <h2>Six Degrees of Nicolas Cage</h2>
-                  <p>
-                    This is an application built with Ruby and Sinatra that uses ActiveRecord to track movies and actors through a many-to-many relationship. It uses an API call to seed a local database. The user can enter two actors names and see the how many degrees of distance before they intersect.
-                  </p>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-12 tech-details">
-                      <p>Ruby | Sinatra | ActiveRecord | PostgreSQL | Movie Database API | Jquery | Bootstrap</p>
-                      <a class="btn btn-outline-primary" href="https://six-degrees-of-nic-cage.herokuapp.com/">View Site</a>
-                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/six-degrees"><span><i class="devicon-github-plain"></i></span>View Repo</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 project-description hidden" id="the-shelf-description">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="screenshot-orbit" id="the-shelf-slick">
-                    <img class="screenshot" src="img/the-shelf-screenshot.png">
-                    <img class="screenshot" src="img/the-shelf-screenshot3.png">
-                    <img class="screenshot" src="img/the-shelf-screenshot2.png">
-                    <img class="screenshot" src="img/the-shelf-screenshot4.png">
-                    <img class="screenshot" src="img/the-shelf-screenshot5.png">
-                    <img class="screenshot" src="img/the-shelf-screenshot6.png">
-                  </div>
-                </div>
-                <div class="col-lg-6 details">
-                  <h2>The Shelf</h2>
-                  <p>This is an application built with Ruby and Sinatra that uses ActiveRecord to track movies and actors through a many-to-many relationship. It uses an API call to seed a local database. The user can enter two actors names and see the how many degrees of distance before they intersect.</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-12 tech-details">
-                      <p>Ruby on Rails | User Authentication with Devise | Admin Dashboard | Stripe API | ActiveRecord | PostgreSQL | Bootstrap | Ajax </p>
-                      <a class="btn btn-outline-primary" href="https://the-shelf-ecommerce.herokuapp.com/">View Site</a>
-                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/the-shelf-RAILS"><span><i class="devicon-github-plain"></i></span>View Repo</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 project-description hidden" id='type-test-description'>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="screenshot-orbit" id="type-test-slick">
-                    <img class="screenshot" src="img/type-test-screenshot1.png">
-                    <img class="screenshot" src="img/type-test-screenshot2.png">
-                    <img class="screenshot" src="img/type-test-screenshot3.png">
-                    <img class="screenshot" src="img/type-test-screenshot4.png">
-                    <img class="screenshot" src="img/type-test-screenshot5.png">
-                  </div>
-                </div>
-                <div class="col-lg-6 details">
-                  <h2>Type Test</h2>
-                  <p>This web application is a typing test for programmers that tests their keyboarding skills. You can create a new player, select a language to practice, and get your score for characters per minute and which keys you missed. It also uses the D3 Javascript library to generate fun graphics based on correct/incorrect keystrokes.</p>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-12 tech-details">
-                      <p>Angular | D3.js | Firebase | TypeScript | Node | Bootstrap </p>
-                      <a class="btn btn-outline-primary" href="https://typing-test-f658d.firebaseapp.com/">View Site</a>
-                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/type-test"><span><i class="devicon-github-plain"></i></span>View Repo</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- second row -->
-      <div class="container">
-        <div class="row project-row2">
-          <div class="col-sm-4">
-            <div class="project-tile" data-target="bike-index">
-              <img class="screenshot" src="img/bike-index-screenshot.png" alt="bike-index-screenshot">
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="project-tile" data-target="stinky-box">
-              <img class="screenshot" src="img/stinky-box-screenshot.png" alt="stinky-box-screenshot">
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="project-tile" data-target="catspot">
-              <img class="screenshot" src="img/catspot-screenshot.png" alt="catspot-screenshot">
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- second row descriptions -->
       <div class="project-description-section">
         <div class="container">
           <div class="row">
@@ -308,31 +212,134 @@
           </div>
         </div>
       </div>
+      <!-- second row -->
+      <div class="container">
+        <div class="row project-row1">
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="six-degrees" data-value="3" >
+              <img class="screenshot" src="img/six-degrees-screenshot.png" alt="Card image cap">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="the-shelf" data-value="2">
+              <img class="screenshot" src="img/the-shelf-screenshot.png" alt="Card image cap">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="type-test" data-value="4">
+              <img class="screenshot" src="img/type-test-screenshot1.png" alt="type-test-screenshot">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- second row descriptions -->
+      <div class="project-description-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 project-description hidden" id="six-degrees-description">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div id="six-degrees-slick">
+                    <img class="screenshot" src="img/six-degrees-screenshot.png">
+                    <img class="screenshot" src="img/six-degrees-screenshot2.png">
+                    <img class="screenshot" src="img/six-degrees-screenshot3.png">
+                    <img class="screenshot" src="img/six-degrees-screenshot4.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>Six Degrees of Nicolas Cage</h2>
+                  <p>
+                    This is an application built with Ruby and Sinatra that uses ActiveRecord to track movies and actors through a many-to-many relationship. It uses an API call to seed a local database. The user can enter two actors names and see the how many degrees of distance before they intersect.
+                  </p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Ruby | Sinatra | ActiveRecord | PostgreSQL | Movie Database API | Jquery | Bootstrap</p>
+                      <a class="btn btn-outline-primary" href="https://six-degrees-of-nic-cage.herokuapp.com/">View Site</a>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/six-degrees"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 project-description hidden" id="the-shelf-description">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="screenshot-orbit" id="the-shelf-slick">
+                    <img class="screenshot" src="img/the-shelf-screenshot.png">
+                    <img class="screenshot" src="img/the-shelf-screenshot3.png">
+                    <img class="screenshot" src="img/the-shelf-screenshot2.png">
+                    <img class="screenshot" src="img/the-shelf-screenshot4.png">
+                    <img class="screenshot" src="img/the-shelf-screenshot5.png">
+                    <img class="screenshot" src="img/the-shelf-screenshot6.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>The Shelf</h2>
+                  <p>This is an E-commerce site that allows users to add items to their shopping cart and checkout and pay via Stripe API. It includes user authentication and an admin dashboard.</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Ruby on Rails | User Authentication with Devise | Admin Dashboard | Stripe API | ActiveRecord | PostgreSQL | Bootstrap | Ajax </p>
+                      <a class="btn btn-outline-primary" href="https://the-shelf-ecommerce.herokuapp.com/">View Site</a>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/the-shelf-RAILS"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 project-description hidden" id='type-test-description'>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="screenshot-orbit" id="type-test-slick">
+                    <img class="screenshot" src="img/type-test-screenshot1.png">
+                    <img class="screenshot" src="img/type-test-screenshot2.png">
+                    <img class="screenshot" src="img/type-test-screenshot3.png">
+                    <img class="screenshot" src="img/type-test-screenshot4.png">
+                    <img class="screenshot" src="img/type-test-screenshot5.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>Type Test</h2>
+                  <p>This web application is a typing test for programmers that tests their keyboarding skills. You can create a new player, select a language to practice, and get your score for characters per minute and which keys you missed. It also uses the D3 Javascript library to generate fun graphics based on correct/incorrect keystrokes.</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Angular | D3.js | Firebase | TypeScript | Node | Bootstrap </p>
+                      <a class="btn btn-outline-primary" href="https://typing-test-f658d.firebaseapp.com/">View Site</a>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/type-test"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- gif carousel -->
       <div class="container project-container">
-        <div class="project" value="the-shelf">
+        <div class="project">
+          <img class="gif" src="http://g.recordit.co/nVsWpneyMI.gif">
+        </div>
+        <div class="project">
+          <img class="gif" src="http://g.recordit.co/WO7nycvWFX.gif">
+        </div>
+        <div class="project">
           <img class="gif" src="http://g.recordit.co/PYqgsto6ct.gif">
         </div>
-
-        <div class="project" value="type-test">
-          <img class="gif" src="http://g.recordit.co/nwp2dwiuRF.gif">
-        </div>
-
-        <div class="project" value="six-degrees">
+        <div class="project">
           <img class="gif" src="http://g.recordit.co/BQPXETdKOO.gif">
         </div>
-
-        <div class="project" value="bike-index">
+        <div class="project">
+          <img class="gif" src="http://g.recordit.co/nwp2dwiuRF.gif">
+        </div>
+        <div class="project">
           <img class="gif" src="http://g.recordit.co/dt7EKzL6Kf.gif">
         </div>
       </div>
 
-
-
-
-
-     </div> <!-- end project section  -->
+    </div> <!-- end project section  -->
 
 
 
