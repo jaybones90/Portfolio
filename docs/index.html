@@ -318,7 +318,103 @@
           </div>
         </div>
       </div>
-
+      <!-- third row -->
+      <div class="container">
+        <div class="row project-row1">
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="mario" data-value="6" >
+              <img class="screenshot" src="img/mario-screenshot1.png">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="tap-room" data-value="7">
+              <img class="screenshot" src="img/tap-room-screenshot.png">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="project-tile" data-target="park-api" data-value="9">
+              <img class="screenshot" src="img/park-api-screenshot.png">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third row descriptions -->
+      <div class="project-description-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 project-description hidden" id='mario-description'>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="screenshot-orbit" id="mario-slick">
+                    <img class="screenshot" src="img/mario-screenshot1.png">
+                    <img class="screenshot" src="img/mario-screenshot2.png">
+                    <img class="screenshot" src="img/mario-screenshot3.png">
+                    <img class="screenshot" src="img/mario-screenshot4.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>Super Marios Speciality Foods</h2>
+                  <p>This is a web application built in Rails that shows the current product inventory of Super Mario's Speciality Food store. Users can enter new products, leave reviews/ratings on specific products. Each product will display individually on it's own page and has CRUD functionality. Database scopes include top 3 highest rated products, average rating for each product, and product with most reviews.</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Ruby | Rails | ActiveRecord | PostgreSQL | Bootstrap | Sass </p>
+                      <a class="btn btn-outline-primary" href="https://super-marios-speciality-foods.herokuapp.com/">View Site</a>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/marios-super-foods-RAILS"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 project-description hidden" id='tap-room-description'>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="screenshot-orbit" id="tap-room-slick">
+                    <img class="screenshot" src="img/tap-room-screenshot.png">
+                    <img class="screenshot" src="img/tap-room-screenshot2.png">
+                    <img class="screenshot" src="img/tap-room-screenshot3.png">
+                    <img class="screenshot" src="img/tap-room-screenshot4.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>Tap Room  </h2>
+                  <p>Simple Angular application that keeps track of beers in a keg and alerts when kegs drop below a certain limit. Implements basic CRUD funcitionality</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Angular | NPM | Gulp | Bootstrap </p>
+                      <a class="btn btn-outline-primary" href=""><span><i class="devicon-github-plain"></i></span>View Fullscreen Demo</a>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/tap-room"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 project-description hidden" id='park-api-description'>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="screenshot-orbit" id="park-api-slick">
+                    <img class="screenshot" src="img/park-api-screenshot.png">
+                    <img class="screenshot" src="img/park-api-screenshot2.png">
+                    <img class="screenshot" src="img/park-api-screenshot3.png">
+                  </div>
+                </div>
+                <div class="col-lg-6 details">
+                  <h2>State and National Park Lookup API</h2>
+                  <p>API built with Rails that has endpoints for state and national parks. Seeded with Faker data. Has custom search and random park database queries that get returned at their respective endpoints.</p>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-12 tech-details">
+                      <p>Ruby | Rails | JSON</p>
+                      <a class="btn btn-outline-primary" href="https://github.com/jaybones90/park-lookup-api-RAILS"><span><i class="devicon-github-plain"></i></span>View Repo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- gif carousel -->
       <div class="container project-container">
         <div class="project">
@@ -339,28 +435,15 @@
         <div class="project">
           <img class="gif" src="http://g.recordit.co/dt7EKzL6Kf.gif">
         </div>
+        <div class="project">
+          <img class="gif" src="http://g.recordit.co/8ukEFxi7Zn.gif">
+        </div>
+        <div class="project">
+          <img class="gif" src="http://g.recordit.co/rIIeeXhEl5.gif">
+        </div>
+
       </div>
-
     </div> <!-- end project section  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <div class="contact-section" id="contact">
       <div class="container">
@@ -391,12 +474,3 @@
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
 </html>
-
-
-<!-- # index page
-  ## make orbit panel clickable with each section having a value that references the gif url
-  ## when project gets clicked on, append below a gif of the project in action
-  ## footer with links to github and linkedin
-# about page
-  ## photo with me and bear
-  ## about info -->

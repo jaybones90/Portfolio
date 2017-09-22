@@ -8,17 +8,6 @@ $('.project-container').slick({
   nextArrow: "<img class='slick-next' src='img/right-arrow-icon.png'>"
 });
 
-// hover for project orbit
-$('.project').hover(
-  function jerry()  {
-    var $selected = $("#" + $(this).attr('value'));
-    $selected.fadeIn(600);
-  }, function() {
-    var $selected = $("#" + $(this).attr('value'));
-    $selected.fadeOut(600);
-  }
-);
-
 // smooth scroll function
 $('a[href*="#"]').click(function(){
   let hash = this.hash;
@@ -28,6 +17,21 @@ $('a[href*="#"]').click(function(){
     window.location.hash = hash;
   });
 });
+
+// hover append overlay on projects
+$('.project-tile').hover(
+    function(e){
+      var $target = $(e.currentTarget);
+      var $targetId = $target.attr('data-target');
+      var $title = $(`#${$targetId}-description`).find('h2').text();
+      var $overlay = $(`<div class='project-overlay'><p class='overlay-title'>${$title}</p></div>`)
+      $(this).append($overlay)
+    }, function(){
+      $(this).find('.project-overlay').remove()
+    }
+  )
+
+
 
 // fade in headline
 $('.headline').fadeIn(2000);
