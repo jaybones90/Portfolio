@@ -150,10 +150,10 @@
   width: 100%;
 }
 .slick-slide {
-  border: 1px solid black;
+  border: 5px solid black;
 }
 .project-tile:hover {
-  border: 2px solid black;
+  border: 3px solid white;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
