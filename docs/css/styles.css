@@ -281,6 +281,10 @@ margin: 3em .5em;
 .slick-prev:before, .slick-next:before {
   color: white;
 }
+.slick-prev, .slick-next {
+  width: 30px;
+  height: 30px;
+}
 
 .details {
   font-family: 'Assistant', sans-serif;
