@@ -59,7 +59,7 @@
 
 .beach-section {
   border-top: 5px solid black;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid black;
   width: 100%;
   height: 700px;
   background-image: url(../img/index-bg.png);
@@ -77,7 +77,7 @@
  .about-block {
    display: block;
    width: 100%;
-   background-color: #4C2A85;
+   background-image: -webkit-linear-gradient(70deg, #274690 60%, #28549C 50%);
 
  }
  .about-block .col{
@@ -120,10 +120,11 @@
 }
 /* Hobby icons */
 .hobby {
+  background-color: #F0F1F2;
   padding: 2em;
   position: relative;
   width: 100%;
-  border-top: 1px solid black;
+  border-top: 5px solid black;
   text-align: center;
 
 }
@@ -254,10 +255,10 @@ margin: 3em .5em;
 }
 
 .project-section{
-  border-top: 1px solid black;
+  border-top: 5px solid black;
   padding-bottom: 8%;
   background-color: #00A8E8;
-  background-image: -webkit-linear-gradient(35deg, #5C3D90 50%, #4C2A85 50%);
+  background-image: -webkit-linear-gradient(145deg, #274690 50%, #28549C 50%);
   min-height: 500px;
 }
 
@@ -360,9 +361,10 @@ margin: 3em .5em;
 }
 
 .dev-icons {
+  background-color: #F0F1F2;
   position: relative;
   width: 100%;
-  border-bottom: 1px solid black;
+  border-bottom: 5px solid black;
   text-align: center;
 }
 .dev-icons p {
