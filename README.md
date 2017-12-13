@@ -20,7 +20,7 @@ _Fictional site for a speciality foods store that has CRUD functionality over pr
 
 [Six Degress of Nic Cage](https://github.com/jaybones90/six-degrees) _Ruby and Sinatra application that seeds a local database via a movie API and lets users enter two actors to see their degrees of separation_ [View Live Site](https://six-degrees-of-nic-cage.herokuapp.com/)
 
-[Simple Ajax request gist](https://gist.github.com/jaybones90/9c8e4d6d0dee09425822a67732bde014.js)
+[Simple Ajax request gist](https://gist.github.com/jaybones90/9c8e4d6d0dee09425822a67732bde014)
 
 
 
